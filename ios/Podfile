@@ -9,6 +9,12 @@ production = ENV["PRODUCTION"] == "1"
 target 'ZoomMeetingRN' do
   config = use_native_modules!
 
+  permissions_path = '../node_modules/react-native-permissions/ios'
+  pod 'Permission-Microphone', :path => "#{permissions_path}/Microphone"
+  pod 'Permission-BluetoothPeripheral', :path => "#{permissions_path}/BluetoothPeripheral"
+  pod 'Permission-Camera', :path => "#{permissions_path}/Camera"
+  pod 'Permission-PhotoLibrary', :path => "#{permissions_path}/PhotoLibrary"
+  
   # Flags change depending on the env values.
   flags = get_default_flags()
 
