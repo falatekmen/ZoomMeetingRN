@@ -1,0 +1,17 @@
+export const icons = {
+  chatSend: require('./chat-send.png'),
+  defaultAvatar: require('./default-avatar.png'),
+  locked: require('./locked.png'),
+  mute: require('./mute.png'),
+  muted: require('./muted.png'),
+  speakerOn: require('./speaker-on.png'),
+  speakerOff: require('./speaker-off.png'),
+  switchCamera: require('./switch-camera.png'),
+  hamburger: require('./hamburger.png'),
+  questionBalloon: require('./question-ballon.png'),
+  talking: require('./talking.png'),
+  unmute: require('./unmute.png'),
+  unlocked: require('./unlocked.png'),
+  videoOn: require('./video-on.png'),
+  videoOff: require('./video-off.png'),
+};
